@@ -10,8 +10,6 @@ class SignUpHandler(webapp2.RequestHandler):
     	logging.info("SecondHandler")
     	# do stuff with books...
         html_params = {
-            "title": "Second Title",
-            "content": "Some stuff about books."
         }
-        template = jinja_env.env.get_template('templates/homepage.html')
+        template = jinja_env.env.get_template('templates/signup.html')
         self.response.out.write(template.render(html_params))

@@ -8,6 +8,6 @@ from handlers import signup_handler
 jinja_env.init(os.path.dirname(__file__))
 
 app = webapp2.WSGIApplication([
-    ('/', main_handler.MainHandler),
+    ('/homepage', main_handler.MainHandler),
     ('/signup', signup_handler.SignUpHandler),
 ], debug=True)

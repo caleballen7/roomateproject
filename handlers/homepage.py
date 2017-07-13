@@ -1,14 +1,8 @@
 
-import jinja_env
-import logging
-import webapp2
-
-
-
-class SignUpHandler(webapp2.RequestHandler):
+class HomePageHandler(webapp2.RequestHandler):
     def get(self):
     	logging.info("SecondHandler")
-    	# do stuff with books...
+..
         html_params = {
             "title": "Second Title",
             "content": "Some stuff about books."
