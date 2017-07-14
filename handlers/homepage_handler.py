@@ -5,11 +5,11 @@ import webapp2
 
 
 
-class SignUpHandler(webapp2.RequestHandler):
+class HomepageHandler(webapp2.RequestHandler):
     def get(self):
     	logging.info("SecondHandler")
-    	# do stuff with books...
+    	
         html_params = {
         }
-        template = jinja_env.env.get_template('templates/signup.html')
+        template = jinja_env.env.get_template('templates/homepage.html')
         self.response.out.write(template.render(html_params))
