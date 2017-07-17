@@ -12,7 +12,7 @@ from models import newuser
 class SignUpHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
-        if user != None: #if they are not logged in 
+        if user == None: #if they are not logged in 
             self.redirect("/homepage")
             return
         user = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
@@ -27,7 +27,7 @@ class SignUpHandler(webapp2.RequestHandler):
         #connecting the response from multiple choice with a value
     def post(self):
         user = users.get_current_user()
-        if user != None:
+        if user == None:
             self.redirect("/homepage")
             return
         r_clean = self.request.get("form_clean")

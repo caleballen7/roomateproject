@@ -8,8 +8,11 @@ from models import newuser
 
 class FindHandler(webapp2.RequestHandler):
     def get(self):
-        
-        user = newuser.UserModel.query().get()
+        user = users.get_current_user()
+        if user == None:
+            self.redirect("/homepage")
+            return
+        user = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
         new_user = "<p>" + "You are " + str(user.clenliness) + " clean. You wake up around " + str(user.weekwake) + " during the week, and " + str(user.weekndwake) + " on the weekends. Here are people that you would be good roommates with!"
 
         user_params = {
