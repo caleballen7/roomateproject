@@ -13,7 +13,7 @@ class SignUpHandler(webapp2.RequestHandler):
     def get(self):
         
 
-
+        user = users.get_current_user()
         if user == None: #if they are not logged in 
             self.redirect("/homepage")
             return
