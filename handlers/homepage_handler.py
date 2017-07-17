@@ -12,7 +12,7 @@ class HomepageHandler(webapp2.RequestHandler):
         logging.info("SecondHandler")
         
         homepagedic = {
-          # "html_login_url": users.create_login_url('/joesthing'),
+            "html_login_url": users.create_login_url('/find'),
         }
         template = jinja_env.env.get_template('templates/homepage.html')
 
