@@ -12,13 +12,29 @@ class FindHandler(webapp2.RequestHandler):
         if user == None:
             self.redirect("/homepage")
             return
-        user = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
-        new_user = "<p>" + "You are " + str(user.clenliness) + " clean. You wake up around " + str(user.weekwake) + " during the week, and " + str(user.weekndwake) + " on the weekends. Here are people that you would be good roommates with!"
+        myUser = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
+        new_user = "<div>" + "You are " + str(myUser.clenliness) + " clean. You wake up around " + str(myUser.weekwake) + " during the week, and " + str(myUser.weekndwake) + " on the weekends. Here are people that you would be good roommates with!" + "</div>"
 
         user_params = {
             "html_info": new_user,
+            "html_email" : user.email()
             }
-        
-        #connecting the response from multiple choice with a value
+        matchedRoommates = [
+        newuser.UserModel(clenliness = "very", weekwake = "7am",
+         weekndwake ="9am", user_email = "laurenf@mail.com"), 
+        newuser.UserModel(clenliness = "not", weekwake = "8am",
+         weekndwake ="9am", user_email = "kaurenp@mail.com"), 
+        newuser.UserModel(clenliness = "somewhat", weekwake = "6am",
+         weekndwake ="10am", user_email = "maurenf@mail.com"), 
+        ]
+
+        match_str = ""
+        for match in matchedRoommates:
+            match_str += "<h3>" + str(match.clenliness) + str(match.weekndwake) + str(match.weekwake) + ", " + str(match.user_email) + "</h3>"
         template = jinja_env.env.get_template('templates/find.html')
-        self.response.out.write(template.render(user_params))
+        parajo = {
+            "html_userObject": match_str,
+            }
+
+        
+        self.response.out.write(template.render(parajo))

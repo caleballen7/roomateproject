@@ -11,7 +11,9 @@ from models import newuser
 
 class SignUpHandler(webapp2.RequestHandler):
     def get(self):
-        user = users.get_current_user()
+        
+
+
         if user == None: #if they are not logged in 
             self.redirect("/homepage")
             return
@@ -22,7 +24,7 @@ class SignUpHandler(webapp2.RequestHandler):
 
         template = jinja_env.env.get_template('templates/signup.html')
 
-        self.response.out.write(template.render())
+        self.response.out.write(template.render(output))
 
         #connecting the response from multiple choice with a value
     def post(self):
