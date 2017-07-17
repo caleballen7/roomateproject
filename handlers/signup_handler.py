@@ -11,11 +11,9 @@ from models import newuser
 
 class SignUpHandler(webapp2.RequestHandler):
     def get(self):
-        
-
-
+        user = users.get_current_user()
         if user == None: #if they are not logged in 
-            self.redirect("/homepage")
+            self.redirect("/signup")
             return
         user = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
         if user != None: #asks python if the user signed in currently already has an account
