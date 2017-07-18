@@ -13,6 +13,7 @@ class UserModel(ndb.Model):
     age = ndb.StringProperty()
     insta = ndb.StringProperty()
     twitter = ndb.StringProperty()
+    petpeeves = ndb.StringProperty()
 
 
 

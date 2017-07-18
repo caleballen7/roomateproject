@@ -42,6 +42,7 @@ class SignUpHandler(webapp2.RequestHandler):
         r_insta = self.request.get("insta")
         r_score = self.request.get("score")
         r_twitter = self.request.get("twitter")
+        r_petpeeves = self.request.get("petpeeves")
 
 
         new_user = newuser.UserModel(clenliness = r_clean,
@@ -55,7 +56,8 @@ class SignUpHandler(webapp2.RequestHandler):
         gradyear = r_gradyear,
         age = r_age,
         insta = r_insta,
-        twitter = r_twitter
+        twitter = r_twitter,
+        petpeeves = r_petpeeves
 
 
 
