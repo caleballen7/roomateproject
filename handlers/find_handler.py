@@ -15,22 +15,32 @@ class FindHandler(webapp2.RequestHandler):
         myUser = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
         new_user = "<div>" + "You are " + str(myUser.clenliness) + " clean. You wake up around " + str(myUser.weekwake) + " during the week, and " + str(myUser.weekndwake) + " on the weekends. Here are people that you would be good roommates with!" + "</div>"
 
-        matchedRoommates = [
-        newuser.UserModel(form_first= "Lauren ", form_last = "Fraser" ,
-        dorm = "Frazier Hall" , user_email = "laurenf@mail.com", user_bio = "I am lauren and I like ice cream. ", age = "18", insta = "instagram.com/laurenpfraser"),
-        newuser.UserModel(clenliness = "not", weekwake = "8am",
-         weekndwake ="9am", user_email = "kaurenp@mail.com"), 
-        newuser.UserModel(clenliness = "somewhat", weekwake = "6am",
-         weekndwake ="10am", user_email = "maurenf@mail.com"), 
-        ]
+        matchedRoommates = newuser.UserModel.query().fetch()
+        for match in matchedRoommates:
+            score = 0
+            if match.clenliness == myUser.clenliness:
+                score = score + 1
+            if match.weekwake == myUser.weekwake:
+                score = score + 1
+            if match.weekndwake == myUser.weekndwake:
+                score = score + 1
+
+            match.score = score 
+
 
         match_str = ""
         for match in matchedRoommates:
-            match_str += "<div>" + "<b>" + str(match.form_first) + " " + str(match.form_last) + ", " + str(match.age) + "</b>"
+            match_str += "<div> Your compatibility score is " + str(match.score) + "<br>" + "<b>" + str(match.form_first) + " " + str(match.form_last) + ", " + str(match.age) + "</b>"
             match_str+= "<p>" + "Dorm: " + str(match.dorm) + "<br>"
             match_str += "Bio: " + str(match.user_bio)+ "<br>"
             match_str += "Email: " + str(match.user_email) + "<br>"
-            match_str += "<a href = " + str(match.insta) + "> Instagram </a>" + "</div>"
+            if match.insta != None: 
+                match_str += "<a href = http://www.instagram.com/" + str(match.insta) + "> Instagram </a>"
+            if match.twitter!= None:
+                match_str += "<a href = http://www.twitter.com/" + str(match.twitter) + "> Twitter </a>" 
+            match_str+= "</div>"
+
+            
 
         template = jinja_env.env.get_template('templates/find.html')
         parajo = {
