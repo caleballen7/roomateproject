@@ -13,8 +13,7 @@ class SignUpHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
         if user == None: #if they are not logged in 
-            self.redirect("/homepage")
-            user = users.get_current_user()
+            self.redirect(users.create_login_url('/signup'))
             return
         user = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
         if user != None: #asks python if the user signed in currently already has an account
@@ -37,7 +36,7 @@ class SignUpHandler(webapp2.RequestHandler):
         r_bio = self.request.get("form_bio")
         
 
-        new_user = UserModel(clenliness = r_clean, weekwake = r_week,
+        new_user = newuser.UserModel(clenliness = r_clean, weekwake = r_week,
          weekndwake = r_weeknd, user_email = user.email())
         new_user.put()
         self.redirect("/find")
