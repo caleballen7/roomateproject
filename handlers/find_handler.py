@@ -32,15 +32,13 @@ class FindHandler(webapp2.RequestHandler):
         for match in matchedRoommates:
             match_str += "<div> Compatibility Score: " + str(match.score) + "<br>" + "<b>" + str(match.form_first) + " " + str(match.form_last) + ", " + str(match.age) + "</b>"
             match_str+= "<p>" + "Dorm: " + str(match.dorm) + "<br>"
-            match_str += "Bio: " + str(match.user_bio)+ "<br>"
+            match_str += "Bio: " + str(match.form_bio)+ "<br>"
             match_str += "Email: " + str(match.user_email) + "<br>"
             if match.insta != None: 
                 match_str += "<a href = http://www.instagram.com/" + str(match.insta) + "> Instagram </a>"
             if match.twitter!= None:
                 match_str += "<a href = http://www.twitter.com/" + str(match.twitter) + "> Twitter </a>"
             match_str+= "</div>"
-
-            
 
         template = jinja_env.env.get_template('templates/find.html')
         parajo = {
