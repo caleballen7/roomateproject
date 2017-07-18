@@ -4,6 +4,7 @@ background-image: url("http://wide-wallpapers.net/download/ipad-connecting-peopl
 font-family: Josefin Sans, sans-serif;
 color: blue;
 
+
 }
 
 #signup{
@@ -16,7 +17,7 @@ color: blue;
   height: 50px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #login{
@@ -29,7 +30,7 @@ color: blue;
   height: 50px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -44,8 +45,8 @@ color: blue;
   margin-top:300px;
   margin-bottom:300px;
   border-radius:15px 50px 30px 5px;
-  height: 250px;
+  height: 180px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
 }
