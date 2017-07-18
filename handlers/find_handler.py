@@ -20,8 +20,8 @@ class FindHandler(webapp2.RequestHandler):
             "html_email" : user.email()
             }
         matchedRoommates = [
-        newuser.UserModel(clenliness = "very", weekwake = "7am",
-         weekndwake ="9am", user_email = "laurenf@mail.com"), 
+        newuser.UserModel(form_first= "Lauren ", form_last = "Fraser" ,
+        dorm = "Frazier Hall" , user_email = "laurenf@mail.com", user_bio = "I am lauren and I like ice cream. ", age = "18"), 
         newuser.UserModel(clenliness = "not", weekwake = "8am",
          weekndwake ="9am", user_email = "kaurenp@mail.com"), 
         newuser.UserModel(clenliness = "somewhat", weekwake = "6am",
@@ -30,7 +30,11 @@ class FindHandler(webapp2.RequestHandler):
 
         match_str = ""
         for match in matchedRoommates:
-            match_str += "<h3>" + str(match.clenliness) + str(match.weekndwake) + str(match.weekwake) + ", " + str(match.user_email) + "</h3>"
+            match_str += "<div>" + "<b>" + str(match.form_first) + " " + str(match.form_last) + ", " + str(match.age) + "</b>"
+            match_str+= "<p>" + "Dorm: " + str(match.dorm) + "<br>"
+            match_str += "Bio: " + str(match.user_bio)+ "<br>"
+            match_str += "Email: " + str(match.user_email) + "</div>"
+
         template = jinja_env.env.get_template('templates/find.html')
         parajo = {
             "html_userObject": match_str,
