@@ -1,5 +1,7 @@
 div{
-	background-color: pink;
+	background-color: #3ED2F0;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	border-radius:15px 50px 30px 5px;
+	padding: 7px;
 }
