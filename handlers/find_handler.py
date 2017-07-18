@@ -37,7 +37,7 @@ class FindHandler(webapp2.RequestHandler):
             if match.insta != None: 
                 match_str += "<a href = http://www.instagram.com/" + str(match.insta) + "> Instagram </a>"
             if match.twitter!= None:
-                match_str += "<a href = http://www.twitter.com/" + str(match.twitter) + "> Twitter </a>" 
+                match_str += "<a href = http://www.twitter.com/" + str(match.twitter) + "> Twitter </a>"
             match_str+= "</div>"
 
             
