@@ -1,15 +1,36 @@
+
 body {
-background-image: url("https://ak9.picdn.net/shutterstock/videos/26615555/thumb/1.jpg");
-font-family: sans-serif;
+background-image: url("http://sf.co.ua/15/05/wallpaper-1204df.jpg");
+font-family: Josefin Sans, sans-serif;
+color: white;
 
 }
 
 #signup{
 	float:right;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top:250px;
+  margin-bottom:400px;
+  border-radius:15px 50px 30px 5px;
+  height: 50px;
+  padding: 5px;
+  /* got transparet rule from: https://stackoverflow.com/a/3969782*/
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #login{
-	float:left;
+  float:left;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top:250px;
+  margin-bottom:400px;
+  border-radius:15px 50px 30px 5px;
+  height: 50px;
+  padding: 5px;
+  /* got transparet rule from: https://stackoverflow.com/a/3969782*/
+  background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 .container-narrow {
@@ -18,10 +39,13 @@ font-family: sans-serif;
 
 
 .box{
-	margin-left: 300px;
-	margin-right: 300px;
-	height: 1000px;
-	padding: 10px;
-	/* got transparet rule from: https://stackoverflow.com/a/3969782*/
-	background-color: rgba(255, 255, 255, 0.9);
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top:500px;
+  margin-bottom:500px;
+  border-radius:15px 50px 30px 5px;
+  height: 250px;
+  padding: 5px;
+  /* got transparet rule from: https://stackoverflow.com/a/3969782*/
+  background-color: rgba(255, 255, 255, 0.1);
 }
