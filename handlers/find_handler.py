@@ -24,6 +24,9 @@ class FindHandler(webapp2.RequestHandler):
                 score = score + 1
             if match.weekndwake == myUser.weekndwake:
                 score = score + 1
+            if match.dorm == myUser.dorm:
+                score = score +10
+
 
             match.score = score 
 
@@ -31,8 +34,9 @@ class FindHandler(webapp2.RequestHandler):
         match_str = ""
         for match in matchedRoommates:
             match_str += "<div> Compatibility Score: " + str(match.score) + "<br>" + "<b>" + str(match.form_first) + " " + str(match.form_last) + ", " + str(match.age) + "</b>"
-            match_str+= "<p>" + "Dorm: " + str(match.dorm) + "<br>"
-            match_str += "Bio: " + str(match.form_bio)+ "<br>"
+            match_str+= "<br><b>" + "Dorm: </b>" + str(match.dorm) + "<br>"
+            match_str += "<b>Bio:</b> " + str(match.form_bio)+ "<br>"
+            match_str += "<b> Pet Peeves: </b>" + str(match.petpeeves) + "<br>"
             match_str += "Email: " + str(match.user_email) + "<br>"
             if match.insta != None: 
                 match_str += "<a href = http://www.instagram.com/" + str(match.insta) + "> Instagram </a>"
