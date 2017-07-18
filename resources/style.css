@@ -1,5 +1,5 @@
 body {
-/*background-image: url("https://ak9.picdn.net/shutterstock/videos/26615555/thumb/1.jpg");*/
+background-image: url("https://ak9.picdn.net/shutterstock/videos/26615555/thumb/1.jpg");
 font-family: sans-serif;
 
 }
@@ -12,3 +12,16 @@ font-family: sans-serif;
 	float:left;
 }
 
+.container-narrow {
+    background: url(/img/cream_dust_transparent.png) repeat 0 0;
+}
+
+
+.box{
+	margin-left: 300px;
+	margin-right: 300px;
+	height: 1000px;
+	padding: 10px;
+	/* got transparet rule from: https://stackoverflow.com/a/3969782*/
+	background-color: rgba(255, 255, 255, 0.9);
+}
