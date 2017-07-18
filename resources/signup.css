@@ -1,4 +1,8 @@
 #signup{
 
-	background-image: url(http://cdn.wallpapersafari.com/39/79/rTJv8l.jpeg);
+	background-color: tan; 
+}
+
+input[type=submit] {
+	width = 20em;  
 }
