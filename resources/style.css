@@ -1,8 +1,8 @@
 
 body {
-background-image: url("http://sf.co.ua/15/05/wallpaper-1204df.jpg");
+background-image: url("http://wide-wallpapers.net/download/ipad-connecting-people-wide-wallpaper-2560x1600.jpg");
 font-family: Josefin Sans, sans-serif;
-color: white;
+color: blue;
 
 }
 
@@ -10,26 +10,26 @@ color: white;
 	float:right;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top:250px;
-  margin-bottom:400px;
+  margin-top:300px;
+  margin-bottom:250px;
   border-radius:15px 50px 30px 5px;
   height: 50px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #login{
   float:left;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top:250px;
-  margin-bottom:400px;
+  margin-top:300px;
+  margin-bottom:250px;
   border-radius:15px 50px 30px 5px;
   height: 50px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
 
 }
 
@@ -41,11 +41,11 @@ color: white;
 .box{
   margin-left: 300px;
   margin-right: 300px;
-  margin-top:500px;
-  margin-bottom:500px;
+  margin-top:300px;
+  margin-bottom:300px;
   border-radius:15px 50px 30px 5px;
   height: 250px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
 }
