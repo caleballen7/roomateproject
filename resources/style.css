@@ -1,6 +1,6 @@
 
 body {
-background-image: url("http://wide-wallpapers.net/download/ipad-connecting-people-wide-wallpaper-2560x1600.jpg");
+background-image: url("http://wide-wallpapers.net/download/ipad-connecting-people-wide-wallpaper-1600x1600.jpg");
 font-family: Josefin Sans, sans-serif;
 color: blue;
 
@@ -42,7 +42,7 @@ color: blue;
 .box{
   margin-left: 300px;
   margin-right: 300px;
-  margin-top:300px;
+  margin-top:5px;
   margin-bottom:300px;
   border-radius:15px 50px 30px 5px;
   height: 180px;

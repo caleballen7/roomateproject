@@ -1,6 +1,8 @@
 #signup{
 
-	background-color: lightblue; 
+	background-color: white; 
+	font-family: Josefin Sans, sans-serif;
+color: blue;
 }
 
 input[type=submit] {
