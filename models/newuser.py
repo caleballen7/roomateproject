@@ -11,6 +11,8 @@ class UserModel(ndb.Model):
     dorm = ndb.StringProperty()
     gradyear = ndb.StringProperty()
     age = ndb.StringProperty()
+    insta = ndb.StringProperty()
+    twitter = ndb.StringProperty()
     
 
 
