@@ -21,6 +21,12 @@ class UserModel(ndb.Model):
     hotorcold = ndb.StringProperty()
     study = ndb.StringProperty()
     sex = ndb.StringProperty()
+    sports=ndb.StringProperty()
+    reading=ndb.StringProperty()
+    game=ndb.StringProperty()
+    netflix=ndb.StringProperty()
+    tech=ndb.StringProperty()
+    
 
 
 
