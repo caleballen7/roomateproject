@@ -45,8 +45,9 @@ color: #3568ba;
   margin-top:5px;
   margin-bottom:300px;
   border-radius:15px 50px 30px 5px;
-  height: 180px;
+  height: 300px;
   padding: 5px;
+
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
   background-color: rgba(255, 255, 255, 0.20);
 }
