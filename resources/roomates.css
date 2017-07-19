@@ -1,3 +1,11 @@
+body {
+background-image: url("https://zellox.com/wp-content/uploads/2016/02/blue-background-image-css.gif");
+background-attachment: fixed;
+font-family: Josefin Sans, sans-serif;
+color:#3568ba;
+
+
+}
 div{
 	background: rgba(108, 217, 247, 0.5);
 	margin-top: 5px;
@@ -22,10 +30,3 @@ a{
 	width: 1000px;
 }
 
-body {
-background-image: url("http://wide-wallpapers.net/download/ipad-connecting-people-wide-wallpaper-1600x1600.jpg");
-font-family: Josefin Sans, sans-serif;
-color: blue;
-
-
-}
