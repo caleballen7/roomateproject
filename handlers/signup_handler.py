@@ -43,6 +43,13 @@ class SignUpHandler(webapp2.RequestHandler):
         r_score = self.request.get("score")
         r_twitter = self.request.get("twitter")
         r_petpeeves = self.request.get("petpeeves")
+        r_friends = self.request.get("friends")
+        r_noiselevel = self.request.get("noiselevel")
+        r_bed = self.request.get("bed")
+        r_God = self.request.get("God")
+        r_hotorcold = self.request.get("hotorcold")
+        r_study = self.request.get("study")
+        r_sex = self.request.get("sex")
 
 
         new_user = newuser.UserModel(clenliness = r_clean,
@@ -57,7 +64,14 @@ class SignUpHandler(webapp2.RequestHandler):
         age = r_age,
         insta = r_insta,
         twitter = r_twitter,
-        petpeeves = r_petpeeves
+        petpeeves = r_petpeeves,
+        friends = r_friends,
+        noiselevel = r_noiselevel, 
+        bed = r_bed,
+        God = r_God, 
+        hotorcold = r_hotorcold,
+        study = r_study,
+        sex = r_sex
 
 
 

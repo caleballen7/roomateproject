@@ -14,6 +14,13 @@ class UserModel(ndb.Model):
     insta = ndb.StringProperty()
     twitter = ndb.StringProperty()
     petpeeves = ndb.StringProperty()
+    friends = ndb.StringProperty()
+    noiselevel = ndb.StringProperty()
+    bed = ndb.StringProperty()
+    God = ndb.StringProperty()
+    hotorcold = ndb.StringProperty()
+    study = ndb.StringProperty()
+    sex = ndb.StringProperty()
 
 
 
