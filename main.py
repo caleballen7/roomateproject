@@ -16,5 +16,4 @@ app = webapp2.WSGIApplication([
     ('/', homepage_handler.HomepageHandler),
     ('/signup', signup_handler.SignUpHandler),
     ('/find', find_handler.FindHandler),
-    ('/aboutus', aboutus_handler.AboutUsHandler),
 ], debug=True)
