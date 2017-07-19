@@ -10,7 +10,7 @@ class FindHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
         if user == None:
-            self.redirect("/homepage")
+            self.redirect("/")
             return
         myUser = newuser.UserModel.query(newuser.UserModel.user_email == user.email()).get()
         new_user = "<div>" + "You are " + str(myUser.clenliness) + " clean. You wake up around " + str(myUser.weekwake) + " during the week, and " + str(myUser.weekndwake) + " on the weekends. Here are people that you would be good roommates with!" + "</div>"

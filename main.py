@@ -11,7 +11,7 @@ from handlers import find_handler
 jinja_env.init(os.path.dirname(__file__))
 
 app = webapp2.WSGIApplication([
-    ('/homepage', homepage_handler.HomepageHandler),
+    ('/', homepage_handler.HomepageHandler),
     ('/signup', signup_handler.SignUpHandler),
     ('/find', find_handler.FindHandler),
 ], debug=True)

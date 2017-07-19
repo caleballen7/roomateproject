@@ -28,7 +28,7 @@ class SignUpHandler(webapp2.RequestHandler):
     def post(self):
         user = users.get_current_user()
         if user == None:
-            self.redirect("/homepage")
+            self.redirect("/")
             return
         r_clean = self.request.get("form_clean")
         r_week = self.request.get("form_week")
