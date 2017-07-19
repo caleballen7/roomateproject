@@ -44,6 +44,18 @@ class FindHandler(webapp2.RequestHandler):
                 score = score + 1 
             if match.sex == myUser.sex:
                 score = score + 100
+            if match.sports == myUser.sports:
+                score = score + 1
+            if match.reading == myUser.reading:
+                score = score + 1
+            if match.game == myUser.game:
+                score = score + 1
+            if match.netflix == myUser.netflix:
+                score = score + 1
+            if match.tech == myUser.tech:
+                score = score + 1
+
+
 
 
 

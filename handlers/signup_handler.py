@@ -50,6 +50,10 @@ class SignUpHandler(webapp2.RequestHandler):
         r_hotorcold = self.request.get("hotorcold")
         r_study = self.request.get("study")
         r_sex = self.request.get("sex")
+        r_sports = self.request.get("sports")
+        r_reading = self.request.get("reading")
+
+
 
 
         new_user = newuser.UserModel(clenliness = r_clean,
@@ -71,7 +75,12 @@ class SignUpHandler(webapp2.RequestHandler):
         God = r_God, 
         hotorcold = r_hotorcold,
         study = r_study,
-        sex = r_sex
+        sex = r_sex,
+        sports = r_sports,
+        reading = r_reading,
+        game= r_game,
+        netflix= r_netflix,
+        tech= r_tech
 
 
 
