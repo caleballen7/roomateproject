@@ -1,6 +1,6 @@
 
 body {
-background-image: url("http://wide-wallpapers.net/download/ipad-connecting-people-wide-wallpaper-1600x1600.jpg");
+background-image: url("https://zellox.com/wp-content/uploads/2016/02/blue-background-image-css.gif");
 font-family: Josefin Sans, sans-serif;
 color: blue;
 
@@ -30,7 +30,7 @@ color: blue;
   height: 50px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.10);
 
 }
 
@@ -48,5 +48,30 @@ color: blue;
   height: 180px;
   padding: 5px;
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #blue;
 }
