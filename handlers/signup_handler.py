@@ -54,6 +54,8 @@ class SignUpHandler(webapp2.RequestHandler):
         r_reading = self.request.get("reading")
         r_game = self.request.get("game")
         r_netflix = self.request.get("netflix")
+        r_tech = self.request.get("tech")
+        
 
 
 
