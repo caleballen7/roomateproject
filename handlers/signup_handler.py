@@ -52,6 +52,7 @@ class SignUpHandler(webapp2.RequestHandler):
         r_sex = self.request.get("sex")
         r_sports = self.request.get("sports")
         r_reading = self.request.get("reading")
+        r_game = self.request.get("game")
 
 
 
