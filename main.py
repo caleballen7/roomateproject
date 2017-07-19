@@ -7,7 +7,7 @@ from handlers import main_handler
 from handlers import signup_handler
 from handlers import homepage_handler
 from handlers import find_handler
-from handlers import aboutus_handler
+
 
 
 jinja_env.init(os.path.dirname(__file__))
