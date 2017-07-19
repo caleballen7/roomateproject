@@ -25,7 +25,26 @@ class FindHandler(webapp2.RequestHandler):
             if match.weekndwake == myUser.weekndwake:
                 score = score + 1
             if match.dorm == myUser.dorm:
-                score = score +10
+                score = score +20
+            if match.gradyear == myUser.gradyear:
+                score = score + 10
+            if match.age == myUser.age:
+                score = score + 3
+            if match.friends == myUser.friends:
+                score = score + 1
+            if match.noiselevel == myUser.noiselevel:
+                score = score + 1
+            if match.bed == myUser.bed:
+                score = score + 1
+            if match.God == myUser.God:
+                score = score + 1
+            if match.hotorcold == myUser.hotorcold:
+                score = score + 1
+            if match.study == myUser.study:
+                score = score + 1 
+            if match.sex == myUser.sex:
+                score = score + 100
+
 
 
             match.score = score 
