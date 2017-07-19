@@ -8,3 +8,5 @@ class AboutUsHandler(webapp2.RequestHandler):
 
 
         template = jinja_env.env.get_template('templates/aboutus.html')
+
+        self.response.out.write(template.render())
