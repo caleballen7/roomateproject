@@ -48,6 +48,10 @@ class FindHandler(webapp2.RequestHandler):
 
 
             match.score = score 
+##This sorts the users from highest compatability to lowest
+        matchedRoommates.sort(key=lambda roommate: roommate.score, reverse = True)
+##This takes out the user trying to find a roommate from the list of options
+        matchedRoommates= matchedRoommates[1:]
 
 
         match_str = ""

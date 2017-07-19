@@ -12,3 +12,20 @@ a{
 	color: white;
 
 }
+#find{
+	background: rgba(110, 220, 247, 0.5);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius:50px 50px 50px 50px;
+	padding: 7px;
+	border:solid rgba(108, 217, 247, 1.0) 5px;
+	width: 1000px;
+}
+
+body {
+background-image: url("http://wide-wallpapers.net/download/ipad-connecting-people-wide-wallpaper-1600x1600.jpg");
+font-family: Josefin Sans, sans-serif;
+color: blue;
+
+
+}
