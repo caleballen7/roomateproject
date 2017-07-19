@@ -1,6 +1,7 @@
 #signup{
 
 background-image: url("https://zellox.com/wp-content/uploads/2016/02/blue-background-image-css.gif");
+background-attachment: fixed;
 	font-family: Josefin Sans, sans-serif;
 color: #3568ba;
 }
