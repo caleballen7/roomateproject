@@ -1,8 +1,8 @@
 
 body {
-background-image: url("https://zellox.com/wp-content/uploads/2016/02/blue-background-image-css.gif");
+background-image: url("http://www.freestockphotos.name/wallpaper-original/wallpapers/laptop-connecting-to-internet-5.jpg");
 font-family: Josefin Sans, sans-serif;
-color: #3568ba;
+color: #1b0c66;
 
 
 }
@@ -49,7 +49,7 @@ color: #3568ba;
   padding: 5px;
 
   /* got transparet rule from: https://stackoverflow.com/a/3969782*/
-  background-color: rgba(255, 255, 255, 0.20);
+  background-color: rgba(255, 255, 255, 0.40);
 }
 
 
@@ -58,7 +58,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.30);
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
 li {
